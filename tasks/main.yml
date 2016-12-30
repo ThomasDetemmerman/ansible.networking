@@ -1,0 +1,10 @@
+- name: define DNS servers
+  template:
+    src: resolv.conf.j2
+    dest: "/etc/resolv.conf"
+
+- name: define default gateway
+  template:
+    src: network.j2
+    dest: "/etc/sysconfig/network"
+  notify: restart network

@@ -1,0 +1,5 @@
+# roles/networking/defaults/main.yml
+---
+networking: "yes"
+
+hostname: "centos"
