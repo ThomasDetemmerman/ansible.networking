@@ -6,7 +6,8 @@ This role statically defines variables on the network-layer like default gateway
 Requirements
 ------------
 
-There is no possibility to assign IP's. This must be done using the vagratn file.
+There is no possibility to assign IP's. This must be done using the vagratn file. <br>
+Tested on CentOS
 
 Role Variables
 --------------
@@ -25,14 +26,14 @@ No dependencies
 
 Example Playbook
 ----------------
-
+```
 dnsserver:
   - 192.0.2.254
   - 172.16.255.254
 
 hostname: 'workstation'
 defaultgateway: '192.0.2.254'
-
+```
 Author Information
 ------------------
 
